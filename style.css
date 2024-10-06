@@ -150,6 +150,10 @@ section#cv h3 {
     background-color: #872e74;
 }
 
+.researchgate {
+    background-color: #f8d00d;
+}
+
 #game-of-life {
     position: absolute;
     top: 0;
