@@ -9,8 +9,17 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+canvas#matrix-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .splash-container {
-    background-image: url('your-image.jpg'); /* Add a background image if you'd like */
+    background-image: none; /* Remove the background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -22,10 +31,38 @@ body, html {
     position: relative;
 }
 
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
+}
+
 .content {
-    background-color: rgba(0, 0, 0, 0.6); /* A semi-transparent overlay for readability */
+    position: relative;
+    z-index: 1;
     padding: 20px;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white background for content */
+    backdrop-filter: blur(5px); /* Creates a frosted glass effect */
+}
+
+.profile-picture-frame {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 h1 {
