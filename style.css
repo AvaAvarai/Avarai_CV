@@ -30,6 +30,7 @@ canvas#matrix-rain {
     color: white;
     position: relative;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
 .backdrop {
@@ -50,13 +51,14 @@ canvas#matrix-rain {
 }
 
 .profile-picture-frame {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 20px;
     border: 5px solid white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
 }
 
 .profile-picture {
@@ -162,4 +164,64 @@ section#cv h3 {
     height: 100%;
     z-index: -1;
     opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+    /* Further reduce profile picture size on smaller screens */
+    .profile-picture-frame {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph text size */
+    }
+
+    /* Reduce padding in container */
+    .splash-container {
+        padding: 10px;
+    }
+
+    /* Adjust button size */
+    .button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Profile picture further reduction */
+    .profile-picture-frame {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .splash-container {
+        padding: 5px;
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
 }
