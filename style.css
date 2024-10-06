@@ -138,10 +138,14 @@ section#cv h3 {
     background-color: #0077B5;
 }
 
-.email {
+.personal-email {
     background-color: #D44638;
 }
 
+.work-email {
+    background-color: #12841d;
+}
+
 .github {
-    background-color: #333;
+    background-color: #872e74;
 }
