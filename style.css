@@ -166,15 +166,61 @@ section#cv h3 {
     opacity: 0.3;
 }
 
+.footer {
+    background-color: #000000;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1rem;
+    margin-right: 10px;
+}
+
+.footer-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-top: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
-    /* Further reduce profile picture size on smaller screens */
     .profile-picture-frame {
         width: 120px;
         height: 120px;
     }
 
     h1 {
-        font-size: 2.5rem; /* Reduce heading size */
+        font-size: 2.5rem;
     }
 
     h2 {
@@ -182,10 +228,9 @@ section#cv h3 {
     }
 
     p {
-        font-size: 1rem; /* Adjust paragraph text size */
+        font-size: 1rem;
     }
 
-    /* Reduce padding in container */
     .splash-container {
         padding: 10px;
     }
@@ -198,7 +243,6 @@ section#cv h3 {
 }
 
 @media (max-width: 480px) {
-    /* Profile picture further reduction */
     .profile-picture-frame {
         width: 100px;
         height: 100px;
