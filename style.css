@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.splash-container {
+    background-image: url('your-image.jpg'); /* Add a background image if you'd like */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6); /* A semi-transparent overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+section#cv {
+    padding: 50px;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+section#cv h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
