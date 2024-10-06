@@ -87,10 +87,21 @@ p {
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
 }
 
 .button:hover {
     background-color: #0056b3;
+}
+
+#rainbow-mode {
+    background-color: #ff00ff;
+}
+
+#rainbow-mode:hover {
+    background-color: #cc00cc;
 }
 
 section#cv {
