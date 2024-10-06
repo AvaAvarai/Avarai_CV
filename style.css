@@ -114,3 +114,34 @@ section#cv h3 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.email {
+    background-color: #D44638;
+}
+
+.github {
+    background-color: #333;
+}
