@@ -29,6 +29,7 @@ canvas#matrix-rain {
     text-align: center;
     color: white;
     position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .backdrop {
